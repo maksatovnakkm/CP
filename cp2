@@ -1,13 +1,14 @@
 import math
-x = float(input())
-k = float(input())
-h = float(input())
-while True:
-    y = ((math.sin(x)  4) + (math.cos(x)  4)) / 5.5
-    print(y)
-    x += h
-    if x > k:
-        break
+y = 0
+a = float(input('Введите начало множества:'))
+b = float(input('Введите конец множества:'))
+c = float(input('Введите шаг:'))
+x = a
+while a <= x <= b:
+    y = ((math.sin(x) ** 4) + (math.cos(x) ** 4)) / 5.5
+    print("При x =", round(x,2),"функция y =", round(y,2))
+    x += c
+
         
         
 sm = 0
@@ -17,3 +18,19 @@ while k <= 7:
     sm += s
     k += 1
 print(1 / (sm))
+
+
+
+
+n = int(input())
+total = 0
+for i in range(0, n):
+    for j in range(1, n + 1):
+        elem = j + i
+        if elem > n:
+            elem = 0
+        print(elem, end = " ")
+        if 0 <= j < 3:
+            total += elem
+    print("")
+print(total)
