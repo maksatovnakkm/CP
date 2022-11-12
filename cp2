@@ -1,0 +1,19 @@
+import math
+x = float(input())
+k = float(input())
+h = float(input())
+while True:
+    y = ((math.sin(x)  4) + (math.cos(x)  4)) / 5.5
+    print(y)
+    x += h
+    if x > k:
+        break
+        
+        
+sm = 0
+k = int(input())
+while k <= 7:
+    s = 1 / (((2 * k - 3)  2)  (1. / 3.))
+    sm += s
+    k += 1
+print(1 / (sm))
