@@ -1,0 +1,37 @@
+print("Введите четырхзначное число")
+k = (input())
+print("Введите слово")
+t = str(input())
+u = str(t)+k
+if "usr" in u:
+    n = str(input("Подтвердите свой id-номер"))
+    if n == k:
+        print("Пользователь подтвержден")
+    else:
+        print("Неверный id-номер")
+elif "clc" in u:
+    print("Введите первое число")
+    w = int(input())
+    print("Введите второе число")
+    q = int(input())
+    print("Введите третье число")
+    o = int(input())
+    a = abs(w) * abs(q) * abs(o)
+    b = w + q + o
+    c = max(w, q, o)
+    d = min(w, q, o)
+    e = c/d
+    f = c - d - (w + q + o -c - d)
+    print('Произведение модулей =', a)
+    print('Сумма чисел =', b)
+    print('Наибольшее =', c)
+    print('Наименьшее =', d)
+    print('Деление =', e)
+    print('Вычитание =', f)
+elif "adm" in u:
+    print('Введите строку')
+    kkm = str(input())
+    if len(kkm) > 5 and (".exe" in kkm or ".cmd" in kkm):
+        print('Исполняемое действие')
+    else:
+        print('Неисполняемое действие')
